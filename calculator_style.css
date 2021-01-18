@@ -1,0 +1,35 @@
+h1 {
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+h2 {
+    color: red;
+    font-family: calibri;
+    font-size: 200%;
+}
+.calc {
+    height: 300px;
+    width: 250px;
+}
+.display {
+    font-size: 300%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+button {
+    color: green;
+    font-family: 'courier new';
+    font-size: 300%;
+    border: none;
+    
+}
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+button:active {
+    background-color: grey;
+}
