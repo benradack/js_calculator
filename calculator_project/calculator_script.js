@@ -54,7 +54,6 @@ class Calculator {
                     this.phrase = this.replaceCharAt(this.phrase, newChar, this.phrase.length - 1);
                 } else this.phrase += newChar;
                 display.textContent = this.phrase;
-                console.log(this.phrase);
             }
         });
     }
@@ -65,7 +64,6 @@ class Calculator {
             const newChar = event.target.textContent;
             this.phrase += newChar;
             display.textContent = this.phrase;
-            console.log(this.phrase);
         })
     }
     addEventListenerToAllClear() {
@@ -82,10 +80,8 @@ class Calculator {
             if (!isButton) return;
             if (this.phrase.length > 0) {
                 this.phrase = this.replaceCharAt(this.phrase, '', this.phrase.length - 1);
-                console.log(this.phrase);
                 if(this.phrase == '') display.textContent = '0';
                 else display.textContent = this.phrase;
-                console.log(this.phrase);
             }
         })
     }
